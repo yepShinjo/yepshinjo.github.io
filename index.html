@@ -517,23 +517,28 @@
       </table>
     </div>
 
-    <!-- TEST checkout links. Before launch swap the host
-         test.checkout.dodopayments.com -> checkout.dodopayments.com and both
-         product ids for their live equivalents. build-site.ps1 warns on every
-         build while the test host is still here. -->
-    <div class="buy-row">
+    <!-- LIVE checkout links - real money. Still GATED until the Chrome Web
+         Store listing is approved: the links work if opened directly, which is
+         how to self-test them, but they are not the call to action yet because
+         a buyer cannot install the extension until review clears.
+         To open sales: delete the two style="display: none" attributes below.
+         One edit, instant, no store review. -->
+    <div class="buy-row" style="display: none">
       <a class="buy" rel="noopener"
-         href="https://test.checkout.dodopayments.com/buy/pdt_0NpBbnCcuWsGVrQL2acap?quantity=1">Pro monthly — $2/month</a>
+         href="https://checkout.dodopayments.com/buy/pdt_0NpByQIVYX49VlZAIRhOk?quantity=1">Pro monthly — $2/month</a>
       <a class="buy alt" rel="noopener"
-         href="https://test.checkout.dodopayments.com/buy/pdt_0NpBZamjxTQFaW9MGjJvw?quantity=1">Pro lifetime — $25 once</a>
+         href="https://checkout.dodopayments.com/buy/pdt_0NpByR61onq36U71rL7F1?quantity=1">Pro lifetime — $25 once</a>
     </div>
-    <p class="buy-note">Monthly renews automatically; cancel any time and keep Pro until the month you paid for ends. Lifetime is one payment, never renews, and costs less than monthly after about a year.</p>
+    <p class="buy-note" style="display: none">Monthly renews automatically; cancel any time from your account portal and keep Pro until the month you paid for ends. Lifetime is one payment, never renews, and costs less than monthly after about a year.</p>
 
     <div class="status">
       <span class="tag">Pre-launch</span>
       <p>
-        Tallylight is in review for the Chrome Web Store. Pro licence keys are
-        delivered by email the moment a purchase completes, on either plan.
+        Tallylight is in review for the Chrome Web Store, so Pro is not on sale
+        yet &mdash; it opens the day the extension is installable. Want a nudge
+        when it does?
+        <a href="mailto:gunkprema1@gmail.com?subject=Tell%20me%20when%20Tallylight%20is%20out">Email
+        me</a> and that is the only thing I will ever use your address for.
       </p>
     </div>
   </section>
@@ -613,7 +618,7 @@
   <section class="doc" id="terms">
     <p class="eyebrow">Policy</p>
     <h2>Terms &amp; refunds</h2>
-    <p class="updated">Last updated 18 September 2026</p>
+    <p class="updated">Last updated 7 October 2026</p>
 
     <h3>What you are buying</h3>
     <p>
@@ -621,7 +626,9 @@
     </p>
     <ul>
       <li><strong>Pro monthly — $2/month.</strong> Renews automatically each
-      month until you cancel. Cancel any time by emailing us; Pro stays unlocked
+      month until you cancel. Cancel any time yourself from your
+      <a href="https://customer.dodopayments.com/login/bus_0Nnq8PV7kWuHg0LOCVyAQ" target="_blank" rel="noopener">account
+      portal</a>; Pro stays unlocked
       until the end of the month you paid for, then Tallylight returns to its
       Free features.</li>
       <li><strong>Pro lifetime — $25 once.</strong> A single payment. It never
@@ -636,8 +643,11 @@
     <p>
       Your licence key is emailed to you as soon as your payment completes.
       Paste it into Tallylight's Settings page to unlock Pro. One key works on
-      up to 3 browsers or computers. Removing it from one frees that slot, and
-      if you need more, just email us.
+      up to 3 browsers or computers. Removing it from one frees that slot. You
+      can also sign in to your
+      <a href="https://customer.dodopayments.com/login/bus_0Nnq8PV7kWuHg0LOCVyAQ" target="_blank" rel="noopener">account
+      portal</a> at any time to read your licence key again, download invoices,
+      or cancel. If you need more than 3, email us and we will sort it out.
     </p>
 
     <h3>Refunds</h3>
@@ -685,6 +695,7 @@
     <nav>
       <a href="#privacy">Privacy</a>
       <a href="#terms">Terms &amp; refunds</a>
+      <a href="https://customer.dodopayments.com/login/bus_0Nnq8PV7kWuHg0LOCVyAQ" target="_blank" rel="noopener">Manage your subscription</a>
       <a href="#">Chrome Web Store — in review</a>
     </nav>
     <p>Tallylight is not affiliated with YouTube or Google.</p>
