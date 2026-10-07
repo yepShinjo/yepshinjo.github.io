@@ -364,11 +364,6 @@
     font-family: var(--mono); font-size: 11px; letter-spacing: 0.1em;
     text-transform: uppercase; color: var(--faint); margin-bottom: 18px;
   }
-  .fill {
-    background: var(--raised); border: 1px dashed var(--signal);
-    color: var(--ink); font-family: var(--mono); font-size: 0.85em;
-    padding: 1px 6px; border-radius: 2px;
-  }
 
   footer {
     border-top: 1px solid var(--line);
@@ -383,7 +378,6 @@
 </style>
 </head>
 <body>
-
 <div class="shell">
 
   <div class="mast">
@@ -517,17 +511,23 @@
           <tr>
             <th scope="row"></th>
             <td><span class="price">$0<small>Forever</small></span></td>
-            <td><span class="price">$15<small>Per year · or $35 lifetime</small></span></td>
+            <td><span class="price">$2<small>Per month · or $25 lifetime</small></span></td>
           </tr>
         </tfoot>
       </table>
     </div>
 
+    <!-- TEST checkout links. Before launch swap the host
+         test.checkout.dodopayments.com -> checkout.dodopayments.com and both
+         product ids for their live equivalents. build-site.ps1 warns on every
+         build while the test host is still here. -->
     <div class="buy-row">
-      <a class="buy" href="YOUR_YEARLY_PAYMENT_LINK">Pro yearly — $15/year</a>
-      <a class="buy alt" href="YOUR_LIFETIME_PAYMENT_LINK">Pro lifetime — $35 once</a>
+      <a class="buy" rel="noopener"
+         href="https://test.checkout.dodopayments.com/buy/pdt_0NpBbnCcuWsGVrQL2acap?quantity=1">Pro monthly — $2/month</a>
+      <a class="buy alt" rel="noopener"
+         href="https://test.checkout.dodopayments.com/buy/pdt_0NpBZamjxTQFaW9MGjJvw?quantity=1">Pro lifetime — $25 once</a>
     </div>
-    <p class="buy-note">Yearly renews automatically; cancel any time and keep Pro until the year you paid for ends. Lifetime is one payment, never renews.</p>
+    <p class="buy-note">Monthly renews automatically; cancel any time and keep Pro until the month you paid for ends. Lifetime is one payment, never renews, and costs less than monthly after about a year.</p>
 
     <div class="status">
       <span class="tag">Pre-launch</span>
@@ -577,15 +577,16 @@
 
     <h3>Payments</h3>
     <p>
-      Pro is sold through our merchant of record, who processes the payment and
-      issues your licence key. They receive your email address and payment
-      details in order to do that. We never see or store your payment details.
+      Pro is sold through <strong>Dodo Payments</strong>, our merchant of record,
+      who processes the payment and issues your licence key. They receive your
+      email address and payment details in order to do that. We never see or
+      store your payment details.
     </p>
     <p>
       When you activate Pro, the extension sends <strong>only your licence
       key</strong>, an activation ID and a generic browser label to Dodo
       Payments' licensing service to confirm it is valid, and re-checks it
-      about once a week. No timestamps, labels, or video information are ever
+      every few days. No timestamps, labels, or video information are ever
       sent with it.
     </p>
 
@@ -606,7 +607,7 @@
     <p>Tallylight is not directed at children under 13 and collects no personal information.</p>
 
     <h3>Contact</h3>
-    <p>Questions about privacy: <span class="fill">[SUPPORT EMAIL]</span></p>
+    <p>Questions about privacy: <a href="mailto:gunkprema1@gmail.com">gunkprema1@gmail.com</a></p>
   </section>
 
   <section class="doc" id="terms">
@@ -619,10 +620,11 @@
       A licence key that unlocks Tallylight's Pro features, on one of two plans:
     </p>
     <ul>
-      <li><strong>Pro yearly — $15/year.</strong> Renews automatically each
-      year until you cancel. Cancel any time by emailing us; Pro stays unlocked until the end of the year you paid for, then
-      Tallylight returns to its Free features.</li>
-      <li><strong>Pro lifetime — $35 once.</strong> A single payment. It never
+      <li><strong>Pro monthly — $2/month.</strong> Renews automatically each
+      month until you cancel. Cancel any time by emailing us; Pro stays unlocked
+      until the end of the month you paid for, then Tallylight returns to its
+      Free features.</li>
+      <li><strong>Pro lifetime — $25 once.</strong> A single payment. It never
       renews and never expires.</li>
     </ul>
     <p>
@@ -634,7 +636,7 @@
     <p>
       Your licence key is emailed to you as soon as your payment completes.
       Paste it into Tallylight's Settings page to unlock Pro. One key works on
-      up to 5 browsers or computers. Removing it from one frees that slot, and
+      up to 3 browsers or computers. Removing it from one frees that slot, and
       if you need more, just email us.
     </p>
 
@@ -642,7 +644,7 @@
     <p class="strong-copy">
       If Tallylight is not what you expected, email us within 14 days of a
       purchase and we will refund you in full. You do not have to give a
-      reason. This applies to your first yearly payment, each yearly renewal,
+      reason. This applies to your first monthly payment, each monthly renewal,
       and lifetime purchases.
     </p>
     <p>
@@ -676,7 +678,7 @@
     </p>
 
     <h3>Contact</h3>
-    <p>Support, refunds, and anything else: <span class="fill">[SUPPORT EMAIL]</span></p>
+    <p>Support, refunds, and anything else: <a href="mailto:gunkprema1@gmail.com">gunkprema1@gmail.com</a></p>
   </section>
 
   <footer>
